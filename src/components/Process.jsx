@@ -1,35 +1,7 @@
-const STEPS = [
-  {
-    number: "01",
-    title: "We talk through the place",
-    body: "A call or a long email thread — either works. We want the street you grew up on, the trail you keep coming back to, the coastline you can't stop thinking about.",
-  },
-  {
-    number: "02",
-    title: "Source charts are gathered",
-    body: "Survey data, historical charts, and satellite reference are pulled together and checked against each other before a single line is drawn.",
-  },
-  {
-    number: "03",
-    title: "The map is drawn by hand",
-    body: "Pen and ink on drafting film, at true scale, redrawn until the proportions feel right rather than just measure right.",
-  },
-  {
-    number: "04",
-    title: "Proofing and correction",
-    body: "A digital proof goes to you for names, spellings, and any landmark we might have missed. We revise until it's right.",
-  },
-  {
-    number: "05",
-    title: "Printing and finishing",
-    body: "Giclée printed on cotton rag paper, trimmed by hand, and either rolled in a brass-capped tube or mounted, your choice.",
-  },
-];
-
 export default function Process() {
   return (
     <section id="process" className="bg-navy-dark text-cream">
-      <div className="mx-auto max-w-5xl px-6 py-20 md:py-28">
+      <div className="mx-auto max-w-5xl p-6 md:p-10">
         <div className="max-w-lg">
           <h2 className="font-display text-4xl">From conversation to chart</h2>
           <p className="font-body text-cream/65 mt-4 leading-relaxed">
@@ -39,24 +11,26 @@ export default function Process() {
         </div>
 
         <ol className="mt-14">
-          {STEPS.map((step, i) => (
-            <li
-              key={step.number}
-              className={`py-8 md:flex md:gap-10 ${
-                i !== 0 ? "border-t border-cream/10" : ""
-              }`}
-            >
-              <span className="font-display text-3xl text-brass-light md:w-20 shrink-0">
-                {step.number}
-              </span>
-              <div className="mt-3 md:mt-0">
-                <h3 className="font-display text-xl">{step.title}</h3>
-                <p className="font-body text-cream/60 mt-2 leading-relaxed max-w-md">
-                  {step.body}
-                </p>
-              </div>
-            </li>
-          ))}
+          <li className="p-8 md:flex md:gap-10">
+            <span className="font-display text-3xl text-brass-light md:w-20">01</span>
+            <div><h3 className="font-display text-xl">We talk through the place</h3><p className="mt-2 max-w-md font-body leading-relaxed text-cream/60">We talk about the street, trail, or coastline you want to remember.</p></div>
+          </li>
+          <li className="border-t border-cream/10 p-8 md:flex md:gap-10">
+            <span className="font-display text-3xl text-brass-light md:w-20">02</span>
+            <div><h3 className="font-display text-xl">We gather the information</h3><p className="mt-2 max-w-md font-body leading-relaxed text-cream/60">Survey data, old charts, and reference images are checked together.</p></div>
+          </li>
+          <li className="border-t border-cream/10 p-8 md:flex md:gap-10">
+            <span className="font-display text-3xl text-brass-light md:w-20">03</span>
+            <div><h3 className="font-display text-xl">The map is drawn</h3><p className="mt-2 max-w-md font-body leading-relaxed text-cream/60">The map is drawn by hand and adjusted until it looks right.</p></div>
+          </li>
+          <li className="border-t border-cream/10 p-8 md:flex md:gap-10">
+            <span className="font-display text-3xl text-brass-light md:w-20">04</span>
+            <div><h3 className="font-display text-xl">You check the proof</h3><p className="mt-2 max-w-md font-body leading-relaxed text-cream/60">You check names, spelling, and landmarks before we print.</p></div>
+          </li>
+          <li className="border-t border-cream/10 p-8 md:flex md:gap-10">
+            <span className="font-display text-3xl text-brass-light md:w-20">05</span>
+            <div><h3 className="font-display text-xl">We print and finish it</h3><p className="mt-2 max-w-md font-body leading-relaxed text-cream/60">The finished map is printed, trimmed, and shipped to you.</p></div>
+          </li>
         </ol>
       </div>
     </section>

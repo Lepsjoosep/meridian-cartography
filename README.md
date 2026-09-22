@@ -4,19 +4,18 @@ A website for a fictional bespoke map-making studio, built with **Vite + React +
 
 ## What's inside
 
-- `src/components/Navbar.jsx` — sticky header with a mobile menu
+- `src/components/Navbar.jsx` — sticky header with responsive links
 - `src/components/Hero.jsx` — headline + a hand-built SVG map illustration
 - `src/components/Process.jsx` — the five-step commissioning process
 - `src/components/Gallery.jsx` — the four map styles offered
-- `src/components/QuoteCalculator.jsx` — **interactive** price estimator (pick format, size, finish, and extras, and the price updates live)
-- `src/components/Testimonials.jsx` — **interactive** review carousel
-- `src/components/FAQ.jsx` — **interactive** accordion
-- `src/components/ContactForm.jsx` — **interactive** form with validation and a success state
+- `src/components/QuoteCalculator.jsx` — simple static estimate examples
+- `src/components/Testimonials.jsx` — static customer reviews
+- `src/components/FAQ.jsx` — native HTML expandable questions
+- `src/components/ContactForm.jsx` — simple HTML form with browser validation
 - `src/components/Footer.jsx`
 
-The layout intentionally avoids CSS grid and keeps flexbox to a minimum (just simple
-`flex` usage for a nav bar and a couple of two-column sections) so the Tailwind classes
-stay easy to read.
+The page is intentionally static and uses Tailwind classes wherever possible, so the
+JSX stays easy to read and explain.
 
 ## Running it locally
 
